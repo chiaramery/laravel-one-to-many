@@ -17,10 +17,10 @@
                         <label for="type">Tipo</label>
                         <select name="type_id" id="type" class="form-select">
                             <option value="">Nessun tipo</option>
-                            @foreach ($types as $type)
+                            {{-- @foreach ($types as $type)
                                 <option value="{{ $type->id }}" @selected(old('type_id') == $type->id)>{{ $type->name }}
                                 </option>
-                            @endforeach
+                            @endforeach --}}
                         </select>
                     </div>
 
@@ -28,7 +28,7 @@
                         <label for="cover_image">Immagine</label>
                         <input type="file" name="cover_image" id="cover_image" class="form-control">
                     </div> --}}
-                    
+
                     <div class="mt-3">
                         <label for="description">Descrizione</label>
                         <textarea name="description" id="description" rows="10" class="form-control">{{ old('description') }}</textarea>
